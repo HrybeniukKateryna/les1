@@ -72,11 +72,11 @@ console.log(result);
 
 console.log(string.join(' ')); */
 
-let string = 'Lorem ipsum, dolor sit amet consectetur fuck adipisicing elit. Voluptates mollitia labore, tempora suck dolorum, molestias commodi quis aspernatur officiis ipsum, maxime beatae necessitatibus id velit harum aliquam qui illum repudiandae optio?'
+let string = 'Lorem ipsum, dolor Suck sit amet consectetur FUCK adipisicing elit. Voluptates mollitia labore, tempora dolorum, molestias commodi quis aspernatur officiis ipsum, maxime beatae necessitatibus id velit harum aliquam qui illum repudiandae optio?'
 
 
 function someFunc(string) {
-    let result = string.split(' ');
+    let result = string.toLowerCase().split(' ');
 
     let some = result.filter(function (item) {
         if (item !== 'fuck' && item !== 'suck') {
