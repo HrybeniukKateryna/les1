@@ -1,3 +1,35 @@
+let string = 'Lorem ipsum, dolor Suck sit amet consectetur FUCK adipisicing elit. Voluptates mollitia labore, tempora dolorum, molestias commodi quis aspernatur officiis ipsum, maxime beatae necessitatibus id velit harum aliquam qui illum repudiandae optio?'
+
+
+function someFunc(string) {
+    let result = string.toLowerCase().split(' ');
+
+    let some = result.filter(function (item) {
+        if (item !== 'fuck' && item !== 'suck') {
+            return item;
+        }
+    });
+    // return result.join(' ');
+    let secRes = some.join(' ');
+    return secRes;
+}
+
+const res = someFunc(string);
+console.log(res);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*function filter(arr, callback) {
 const newArr = [];
 
@@ -72,24 +104,7 @@ console.log(result);
 
 console.log(string.join(' ')); */
 
-let string = 'Lorem ipsum, dolor Suck sit amet consectetur FUCK adipisicing elit. Voluptates mollitia labore, tempora dolorum, molestias commodi quis aspernatur officiis ipsum, maxime beatae necessitatibus id velit harum aliquam qui illum repudiandae optio?'
 
-
-function someFunc(string) {
-    let result = string.toLowerCase().split(' ');
-
-    let some = result.filter(function (item) {
-        if (item !== 'fuck' && item !== 'suck') {
-            return item;
-        }
-    });
-    // return result.join(' ');
-    let secRes = some.join(' ');
-    return secRes;
-}
-
-const res = someFunc(string);
-console.log(res);
 
 
 
