@@ -1,11 +1,27 @@
-let string = 'Lorem ipsum, dolor Suck sit amet consectetur FUCK adipisicing elit. Voluptates mollitia labore, tempora dolorum, molestias commodi quis aspernatur officiis ipsum, maxime beatae necessitatibus id velit harum aliquam qui illum repudiandae optio?'
+function capitalize(str) {
+    let a = string.split(' ');
 
+    return str.replace(/(^|\s)\S/g, function(a) {return a.toUpperCase()})
+
+    
+};
+
+const string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio, dolorem nobis nostrum quia a explicabo veniam magni deserunt officia! Amet, nam sed? Atque error culpa consequuntur. Inventore, sint autem!';
+console.log(capitalize(string)); //Lorem Ipsum Dolor....
+
+
+
+ 
+
+
+/*let string = 'Lorem ipsum, dolor Suck sit amet consectetur FUCK adipisicing elit. Voluptates mollitia labore, tempora dolorum, molestias commodi quis aspernatur officiis ipsum, maxime beatae necessitatibus id velit harum aliquam qui illum repudiandae optio?'
+return string[0].toUpperCase() + string.slice(1);
 
 function someFunc(string) {
-    let result = string.toLowerCase().split(' ');
+    let result = string.split(' ');
 
     let some = result.filter(function (item) {
-        if (item !== 'fuck' && item !== 'suck') {
+        if (item.toLowerCase() !=== 'fuck' && item.toLowerCase() !=== 'suck') {
             return item;
         }
     });
@@ -16,6 +32,13 @@ function someFunc(string) {
 
 const res = someFunc(string);
 console.log(res);
+*/
+
+
+
+
+
+
 
 
 
