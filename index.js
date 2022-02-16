@@ -1,17 +1,78 @@
-function capitalize(str) {
+function askUser() {
+    let stringArr = [];
+    let numArr = [];
+    let answer = true;
+    for (let i = 0; true; i++) {
+        if (i !== 0 && i % 5 === 0) {
+            answer = confirm('Ready to continue?');
+        }
+        if (!answer) {
+            console.log(stringArr);
+            console.log(numArr);
+        }
+        let currentWord = prompt('Enter your word');
+        if (isNaN(currentWord) === true) {
+            stringArr.push(currentWord);
+        } else /*if (typeof +currentWord === 'NaN') */ {
+            numArr.push(currentWord);
+        }
+
+    }
+};
+askUser();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*function capitalize(str) {
     let a = string.split(' ');
 
     return str.replace(/(^|\s)\S/g, function(a) {return a.toUpperCase()})
 
-    
+
 };
 
 const string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio, dolorem nobis nostrum quia a explicabo veniam magni deserunt officia! Amet, nam sed? Atque error culpa consequuntur. Inventore, sint autem!';
 console.log(capitalize(string)); //Lorem Ipsum Dolor....
+*/
 
-
-
- 
 
 
 /*let string = 'Lorem ipsum, dolor Suck sit amet consectetur FUCK adipisicing elit. Voluptates mollitia labore, tempora dolorum, molestias commodi quis aspernatur officiis ipsum, maxime beatae necessitatibus id velit harum aliquam qui illum repudiandae optio?'
@@ -88,7 +149,7 @@ const result = arr.some(function (item) {
     return item ===12;
 });
 
-console.log(result); 
+console.log(result);
 
 const arr = [12, 13, 423,23, 12];
 
